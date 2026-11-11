@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <h2 class="logo">My<span>Bio.</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="print-btn" onclick="printBio()">
+            Download PDF
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- Profile Section -->
+        <section class="hero glass" id="home">
+
+            <div class="profile-image">
+                <img src="https://placehold.co/300x300/7650b5/ffffff?text=Your+Photo"
+                     alt="Profile Photo">
+            </div>
+
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY BIODATA</p>
+
+                <h1>Your <span>Rakesh</span></h1>
+
+                <h3>Student | Aspiring Developer | Problem Solver</h3>
+
+                <p class="intro">
+                    Hello! I am a passionate and dedicated individual
+                    who loves learning new technologies and exploring
+                    creative ideas.
+                </p>
+
+               <a href="#about" class="print-btn">
+    Explore My Profile
+</a>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="section glass" id="about">
+            <h2>About <span>Me</span></h2>
+
+            <p>
+                I am a motivated individual with a strong interest
+                in technology, creativity and personal development.
+                I believe in continuous learning and improving my
+                skills through practical experience.
+            </p>
+        </section>
+
+        <!-- Personal Details -->
+        <section class="section glass">
+            <h2>Personal <span>Details</span></h2>
+
+            <div class="details-grid">
+                <div class="detail">
+                    <h4>Full Name</h4>
+                    <p>Rakesh Patra</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Date of Birth</h4>
+                    <p>09/05/2007</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Gender</h4>
+                    <p>Male</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Nationality</h4>
+                    <p>Indian</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Languages</h4>
+                    <p>English, Hindi, Bengali, French</p>
+                </div>
+
+                <div class="detail">
+                    <h4>Location</h4>
+                    <p>Nandakumar, West Bengal</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section glass" id="education">
+            <h2>My <span>Education</span></h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h3>Graduation</h3>
+                    <p>B.P. Poddar Institute of Management and Technology</p>
+                    <small>2025 - Present</small>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Higher Secondary</h3>
+                    <p>Srikrishnapur High School(H.S.)</p>
+                    <small>2025</small>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Secondary Education</h3>
+                    <p>Srkrishnapur High School(H.S)</p>
+                    <small>2023</small>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section glass" id="skills">
+            <h2>My <span>Skills</span></h2>
+
+            <div class="skills-container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Python</div>
+                <div class="skill">C Programming</div>
+                <!-- <div class="skill">JavaScript</div> -->
+                <div class="skill">Problem Solving</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section glass">
+            <h2>My <span>Projects</span></h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>I developed a full Bio-data of myself by using HTML,CSS,JAVA SCRIPT .</p>
+                </div>
+
+                <!-- <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>Write a short description of your project here.</p>
+                </div> -->
+
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="section glass">
+            <h2>Hobbies & <span>Interests</span></h2>
+
+            <div class="skills-container">
+                <div class="skill">Coding</div>
+                <div class="skill">Reading</div>
+                <div class="skill">Music</div>
+                <div class="skill">Photography</div>
+                <div class="skill">Travelling</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section glass" id="contact">
+            <h2>Contact <span>Me</span></h2>
+
+            <div class="contact-info">
+                <p>Email: rakeshpatra721648@gmail.com</p>
+                <p>Phone: +91 9932908051</p>
+                <p>Address: Dakshin Srikrishnapur, Nandakumar, Purba Medinipur, West Bengal, Pin-721648</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© <span id="year"></span> Rakesh. All Rights Reserved.</p>
+            <p>Designed with 💜 using HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
