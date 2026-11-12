@@ -501,41 +501,54 @@ button:active,
         background: white;
     }
 }
-/* Floating Profile Image on Scroll */
+/* Navbar shrinking animation */
+.navbar {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
 
+/* Navbar when scrolling */
+body.scrolled .navbar {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+}
+
+/* Profile picture animation */
 .profile-image {
     transition: all 0.5s ease;
-    z-index: 1000;
 }
 
-.profile-image img {
-    transition: all 0.5s ease;
-}
-
-/* When scrolling */
-.profile-image.floating {
+/* Profile picture moves to the left gap */
+body.scrolled .profile-image {
     position: fixed;
-    top: 20px;
-    right: 25px;
-    z-index: 1000;
+    top: 12px;
+    left: 20px;
+    z-index: 1100;
 }
 
-.profile-image.floating img {
-    width: 70px;
-    height: 70px;
-    border-width: 2px;
-    box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+body.scrolled .profile-image img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-/* Mobile screen */
+/* Mobile adjustment */
 @media (max-width: 768px) {
-    .profile-image.floating {
-        top: 12px;
-        right: 12px;
+    body.scrolled .navbar {
+        width: calc(100% - 65px);
+        margin-left: 65px;
     }
 
-    .profile-image.floating img {
-        width: 55px;
-        height: 55px;
+    body.scrolled .profile-image {
+        left: 8px;
+        top: 12px;
+    }
+
+    body.scrolled .profile-image img {
+        width: 48px;
+        height: 48px;
     }
 }

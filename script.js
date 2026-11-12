@@ -7,14 +7,12 @@ document.getElementById("year").textContent =
 function printBio() {
     window.print();
 }
-// Move profile image to corner when scrolling
+// Shrink navbar and move profile image on scroll
 
 window.addEventListener("scroll", function () {
-    const profileImage = document.querySelector(".profile-image");
-
-    if (window.scrollY > 150) {
-        profileImage.classList.add("floating");
+    if (window.scrollY > 100) {
+        document.body.classList.add("scrolled");
     } else {
-        profileImage.classList.remove("floating");
+        document.body.classList.remove("scrolled");
     }
 });
