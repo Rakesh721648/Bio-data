@@ -151,7 +151,7 @@ h2 span {
 }
 
 .section:hover {
-    border-color: rgba(192, 132, 252, 0.195);
+    border-color: rgba(192, 132, 252, 0.097);
     transform: translateY(-3px);
 }
 
@@ -270,7 +270,7 @@ h2 span {
 }
 
 .project-card:hover {
-    background: rgba(146, 51, 234, 0.073);
+    background: rgba(146, 51, 234, 0.04);
     transform: translateY(-5px);
 }
 
