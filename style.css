@@ -501,3 +501,41 @@ button:active,
         background: white;
     }
 }
+/* Floating Profile Image on Scroll */
+
+.profile-image {
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.profile-image img {
+    transition: all 0.5s ease;
+}
+
+/* When scrolling */
+.profile-image.floating {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.profile-image.floating img {
+    width: 70px;
+    height: 70px;
+    border-width: 2px;
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+    .profile-image.floating {
+        top: 12px;
+        right: 12px;
+    }
+
+    .profile-image.floating img {
+        width: 55px;
+        height: 55px;
+    }
+}
